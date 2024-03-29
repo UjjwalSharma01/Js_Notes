@@ -46,10 +46,11 @@ let str2 = " hitesh"
 let str3 = str1 + str2
 // console.log(str3);
 
-// console.log("1" + 2);
-// console.log(1 + "2");
-// console.log("1" + 2 + 2);
-// console.log(1 + 2 + "2");
+console.log("1" + 2); // number + string => string in all cases
+console.log("this is the console and log of 1 + 2");
+console.log(1 + "2"); 
+console.log("1" + 2 + 2);
+console.log(1 + 2 + "2"); // 3 + "2" => "32"
 
 // console.log( (3 + 4) * 5 % 3);
 
