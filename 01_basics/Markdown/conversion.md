@@ -6,8 +6,15 @@
 
     ```javascript
     let score = "hitesh";
+    // console.log(typeof score);
+    // console.log(typeof(score));
+
     let valueInNumber = Number(score);
+    // console.log(typeof valueInNumber); 
+    // console.log(valueInNumber);
     ```
+
+    while conversions
 
     `"33"` becomes `33`, `"33abc"` gives `NaN`, and `true` and `false` become `1` and `0`.
 
@@ -16,6 +23,7 @@
     ```javascript
     let isLoggedIn = "hitesh";
     let booleanIsLoggedIn = Boolean(isLoggedIn);
+    // console.log(booleanIsLoggedIn);
     ```
 
     `1` becomes `true`, `0` becomes `false`, `""` becomes `false`, and any non-empty string becomes `true`.
@@ -25,6 +33,8 @@
     ```javascript
     let someNumber = 33;
     let stringNumber = String(someNumber);
+    // console.log(stringNumber);
+    // console.log(typeof stringNumber);
     ```
 
 ## Arithmetic Operations
