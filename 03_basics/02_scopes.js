@@ -1,4 +1,4 @@
-//var c = 300
+//var c = 300 //=> its a global variable kahi bhi declare krlo rhega global hi
 let a = 300
 if (true) {
     let a = 10
@@ -13,7 +13,7 @@ if (true) {
 // console.log(b);
 // console.log(c);
 
-
+// => scope in browser is different and in node is different, how? => 
 function one(){
     const username = "hitesh"
 
