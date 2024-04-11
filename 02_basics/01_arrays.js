@@ -2,7 +2,9 @@
 
 /*
 
-arrays arrays are resizable in JavaScript, and elements can be added and removed.
+arrays 
+
+arrays are resizable in JavaScript, and elements can be added and removed.
 
 values are accessed using the index, which starts from 0.
 copy operations always create shallow copies which means that the original array is effected if the copied array is changed.
@@ -12,7 +14,7 @@ copy operations always create shallow copies which means that the original array
 const myArr = [0, 1, 2, 3, 4, 5]
 const myHeors = ["shaktiman", "naagraj"]
 
-const myArr2 = new Array(1, 2, 3, 4)
+const myArr2 = new Array(1, 2, 3, 4) // not recommended to use if u want to create array of a single element -> it will create an array of that length not the element with values undefined
 // console.log(myArr[1]);
 
 // Array methods
