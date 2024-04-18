@@ -29,6 +29,13 @@ function one(){
 
 // one()
 
+
+/*
+
+Closure: when a function is enclosed or nested in a parent function, then the variables of the parent function are accessible to the child function, this is called closure in javascript
+
+*/
+
 if (true) {
     const username = "hitesh"
     if (username === "hitesh") {
@@ -44,6 +51,10 @@ if (true) {
 // ++++++++++++++++++ interesting ++++++++++++++++++
 
 
+//variables in javascript can even hold functions
+
+
+// Hoisting can be done in functions but not in expressions and variables
 console.log(addone(5))
 
 function addone(num){
@@ -53,6 +64,8 @@ function addone(num){
 
 
 addTwo(5)
+
+// this is known as the expression function
 const addTwo = function(num){
     return num + 2
 }

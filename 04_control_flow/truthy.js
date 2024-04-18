@@ -1,4 +1,24 @@
+/*
+ 
+truthy valuesa are those when you doon't do any comparison and assumes that the value is true
+
+which values are truthy and falsy values
+
+falsy values
+
+false, 0, -0, BigInt 0n, "", null, undefined, NaN
+
+truthy values
+"0", 'false', " ", [], {}, function(){}
+
+if there is any value in string then it is truthy, and if the array is empty then it is truthy
+
+*/
+
+
+
 const userEmail = []
+
 
 if (userEmail) {
     console.log("Got user email");
