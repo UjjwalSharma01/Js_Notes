@@ -1,3 +1,19 @@
+/*
+
+how to iterate arrays and maps using foreach operatiors
+syntax: for of loop
+for(const element of array) {
+    console.log(element)
+}
+ for map, if you want to print keys and value seperately, you can use destructuring
+for(const [key, value] of map) {
+    console.log(key, value)
+}
+what are maps -> maps are key value pairs, where key can be any type of data type, its just like objects but easily iterable
+
+ */
+
+
 // for of
 
 // ["", "", ""]
