@@ -1,3 +1,13 @@
+<!-- 
+
+DOM stands for - Document Object Model
+
+
+
+
+ -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,3 +39,55 @@
     </div>
 </body>
 </html>
+
+<!-- 
+
+    difference between innertext and textcontent
+    innerText - it will not show the text hidden by css display:none
+    textContent - it will show the text hidden by css display:none, it will show the text as it is in the html
+
+    what is InnweHTML
+    innerHTML - it will show the html content of the element
+    example -   <h1  id="title" class="heading">DOM learning on Chai aur code <span style="display: none;">test text</span></h1>
+                console.log(title.innerHTML) // DOM learning on Chai aur code <span style="display: none;">test text</span>
+
+
+
+
+Query selector -> works like CSS selector
+    querySelector - it will select the first element that matches the query
+    querySelectorAll - it will select all the elements that matches the query
+
+    example - 
+    let title = document.querySelector('#title')
+    console.log(title) // <h1  id="title" class="heading">DOM learning on Chai aur code <span style="display: none;">test text</span></h1>
+
+    let title = document.querySelectorAll('.heading')
+    console.log(title) // NodeList(1) [h1.heading]
+
+    let title = document.querySelectorAll('.list-item')
+    console.log(title) // NodeList(4) [li.list-item, li.list-item, li.list-item, li.list-item]
+
+    let title = document.querySelectorAll('h2')
+    console.log(title) // NodeList(3) [h2, h2, h2]
+
+    let title = document.querySelectorAll('h2, h1')
+    console.log(title) // NodeList(4) [h1.heading, h2, h2, h2]
+
+    let title = document.querySelectorAll('h2, h1, .list-item')
+    console.log(title) // NodeList(7) [h1.heading, h2, h2, h2, li.list-item, li.list-item, li.list-item, li.list-item]
+
+    let title = document.querySelectorAll('h2, h1, .list-item, #title')
+    console.log(title) // NodeList(8) [h1.heading, h2, h2, h2, li.list-item, li.list-item, li.list-item, li.list-item]
+
+    let title = document.querySelectorAll('h2, h1, .list-item, #title, input')
+    console.log(title) // NodeList(9) [h1.heading, h2, h2, h2, li.list-item, li.list-item, li.list-item, li.list-item, input]
+
+
+    what is node list
+    NodeList - it is a collection of nodes, it is not an array but it is similar to array, it has forEach method but it does not have map, filter, reduce methods
+
+    conversion to array from any type, be it array like object or nodelist
+    Array.from() - it will convert any array like object to array
+
+ -->
