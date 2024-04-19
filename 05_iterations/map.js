@@ -14,3 +14,13 @@ const newNums = myNumers
                 .filter( (num) => num >= 40)
 
 console.log(newNums);
+
+/*
+
+how to enter data in the map and how to declare them
+how to declare map
+const map = new Map() // empty map
+entering data in map
+map.set('key', 'value')
+map.set('key', 'value')
+ */
