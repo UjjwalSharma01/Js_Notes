@@ -19,12 +19,19 @@
    </div>
 </body>
 <script>
+// do not use this method
+
     // document.getElementById('owl').onclick = function(){
     //     alert("owl clicked")
     // }
 
+    // events are invoked only when something happens 
+
      // attachEvent()
     // jQuery - on
+
+
+    // STUDY THESE TOPICS
 
     // type, timestamp, defaultPrevented
     // target, toElement, srcElement, currentTarget,
@@ -35,6 +42,10 @@
     //     console.log("clicked inside the ul");
     // }, false)
 
+    // event propagation => includes two things bubbling and capturing
+
+    // false => bubbling, true => capturing
+
     // document.getElementById('owl').addEventListener('click', function(e){
     //     console.log("owl clicked");
     //     e.stopPropagation()
@@ -42,7 +53,7 @@
     
     // document.getElementById('google').addEventListener('click',function(e){
     //     e.preventDefault();
-    //     e.stopPropagation()
+    //     e.stopPropagation() // to stop the event propagation => bubbling
     //     console.log("google clicked");
     // }, false)
    
@@ -59,5 +70,12 @@
     })
     
     //removeIt.parentNode.removeChild(removeIt)
+
+    // bubbling => event starts from the target element and goes up to the parent element in propagation
+    // capturing => event starts from the parent element and goes down to the target element in propagation 
+    // event.stopPropagation() => stops the event propagation
+    // event.preventDefault() => stops the default behaviour of the event
+    // event.stopImmediatePropagation() => stops the event propagation and other event listeners attached to the same element
+    // this happens when we have multiple event listeners like in the above example
 </script>
 </html>

@@ -17,7 +17,9 @@
     div.setAttribute("title", "generated title")
     div.style.backgroundColor = "green"
     div.style.padding = "12px"
+    // this is not recommended because when we use this it fetched the alread present value and then override it
     // div.innerText = "Chai aur code"
+    // whereas this directly add the text to the element
     const addText = document.createTextNode("Chai aur code")
     div.appendChild(addText)
 

@@ -91,3 +91,18 @@ Query selector -> works like CSS selector
     Array.from() - it will convert any array like object to array
 
  -->
+
+ <!-- execution example of nodelist -->
+    <script>
+        let title = document.querySelectorAll('h2, h1, .list-item, #title, input')
+        console.log(title) // NodeList(9) [h1.heading, h2, h2, h2, li.list-item, li.list-item, li.list-item, li.list-item, input]
+    
+        let titleArray = Array.from(title)
+        console.log(titleArray) // (9) [h1.heading, h2, h2, h2, li.list-item, li.list-item, li.list-item, li.list-item, input]
+    
+        titleArray.forEach((element) => {
+            console.log(element)
+        })
+        // if i want to tamper a single node
+        titleArray[0].style.color = 'red'
+    </script>
