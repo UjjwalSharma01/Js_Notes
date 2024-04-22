@@ -1,3 +1,7 @@
+// promises are the modern way to handle async operations in javascript, these are the events that either will be completed or not but in the future.
+
+
+// creating a promise       
 const promiseOne = new Promise(function(resolve, reject){
     //Do an async task
     // DB calls, cryptography, network
@@ -7,10 +11,14 @@ const promiseOne = new Promise(function(resolve, reject){
     }, 1000)
 })
 
+
+// consuming the promise
 promiseOne.then(function(){
     console.log("Promise consumed");
 })
 
+
+// method 2 of creating a promise
 new Promise(function(resolve, reject){
     setTimeout(function(){
         console.log("Async task 2");
@@ -21,6 +29,8 @@ new Promise(function(resolve, reject){
     console.log("Async 2 resolved");
 })
 
+
+// resolve and reject
 const promiseThree = new Promise(function(resolve, reject){
     setTimeout(function(){
         resolve({username: "Chai", email: "chai@example.com"})
@@ -31,6 +41,8 @@ promiseThree.then(function(user){
     console.log(user);
 })
 
+
+//reject and error handling via catch
 const promiseFour = new Promise(function(resolve, reject){
     setTimeout(function(){
         let error = true
@@ -76,22 +88,28 @@ async function consumePromiseFive(){
 
 consumePromiseFive()
 
-// async function getAllUsers(){
-//     try {
-//         const response = await fetch('https://jsonplaceholder.typicode.com/users')
+// async await
 
-//         const data = await response.json()
-//         console.log(data);
-//     } catch (error) {
-//         console.log("E: ", error);
-//     }
-// }
+async function getAllUsers(){
+    try {
+        const response = await fetch('https://jsonplaceholder.typicode.com/users')
 
-//getAllUsers()
+        const data = await response.json()
+        console.log(data);
+    } catch (error) {
+        console.log("E: ", error);
+    }
+}
+
+getAllUsers()
+
+
+
+// nested .then in promises
 
 fetch('https://api.github.com/users/hiteshchoudhary')
 .then((response) => {
-    return response.json()
+    return response.json() // this returned value will be passed to the next "then"
 })
 .then((data) => {
     console.log(data);
