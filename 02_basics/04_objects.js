@@ -36,7 +36,7 @@ const obj3 = Object.assign({}, obj1, obj2)
 
 //using spread operator
 const objj4 = {...obj1, ...obj2}
-// console.log(objj4);
+// console.log(obj4);
 
 
 // this is how you receive the data from the server
